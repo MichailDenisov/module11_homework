@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Погода сейчас</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+  </head>
+  <body>
+    <div>
+      <div class="box">
+        <form>
+          <input type="search" id="searchInput" placeholder="Введите город" />
+          <div>
+            <button type="submit" class="btn" id="button">Узнать погоду</button>
+            <button type="submit" class="btn btn-current" id="currentLocation">
+              Текущее Местоположение
+            </button>
+          </div>
+        </form>
+
+        <h1 id="city"></h1>
+        <p class="date" id="now"></p>
+
+        <div class="meteo">
+          <div class="today">
+            <h2></h2>
+            <div class="row-temp">
+              <p class="temperature" id="temp"></p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
